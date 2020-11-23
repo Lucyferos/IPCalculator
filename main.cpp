@@ -20,16 +20,16 @@ return wynik;
 }
 
 int BinaryToDecimal(int n) {
-   int decimalNumber = 0;
-   int base = 1;
-   int temp = n;
-   while (temp) {
-      int lastDigit = temp % 10;
-      temp = temp/10;
-      decimalNumber += lastDigit*base;
-      base = base*2;
+   int pierwszyNumer = 0;
+   int baza = 1;
+   int tymczasowy = n;
+   while (tymczasowy) {
+      int ostatniaCyfra = tymczasowy % 10;
+      tymczasowy = tymczasowy/10;
+      pierwszyNumer += ostatniaCyfra*baza;
+      baza = baza*2;
    }
-   return decimalNumber;
+   return pierwszyNumer;
 }
 
 int StringtoInt(string x){
@@ -167,7 +167,7 @@ int main(int argc, char** argv) {
 	}
 
 
-	//wyznaczanie ilosci hostów
+	//wyznaczanie ilosci hostÃ³w
     int maskaSkrocona= ile(wielkosc+1, tab, "1");
     int z1 = 32-maskaSkrocona;
     cout<<"Hosts: "<<pow(2, z1)-2<<endl;
