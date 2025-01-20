@@ -46,7 +46,7 @@ Broadcast: 192.168.1.255
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/maciejblawat/IPCalculator.git
    ```
 2. Compile the program using a C++ compiler:
    ```bash
